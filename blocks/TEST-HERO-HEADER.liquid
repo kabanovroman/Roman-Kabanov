@@ -1,0 +1,47 @@
+<div class="test-header">
+    <div class="test-header__bar">
+        <button class="test-header__toggle">
+            <span class="test-header__burger">
+
+            </span> 
+        </button>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Hero header",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo Image"
+        },
+        {
+            "type": "text",
+            "id": "logo_text",
+            "label": "Logo Text"
+        },
+        {
+            "type": "text",
+            "id": "announcement",
+            "label": "Announcement text" 
+        },
+        {
+            "type": "text",
+            "id": "choose_gift_label",
+            "label": "Choosee gift button label" 
+        },
+        {
+            "type": "url",
+            "id": "choose_gift_link",
+            "label": "Choose gift button link"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero header"
+        }
+    ]
+}
+{% endschema %}
