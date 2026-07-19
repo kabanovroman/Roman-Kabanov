@@ -609,9 +609,9 @@
 
 .test-popup__price {
   margin: 20px 0 0;
-  font-family: var(--test-jost);
+  font-family: Lustria;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
