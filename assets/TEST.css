@@ -899,4 +899,9 @@ body.test-popup-open {
     width: 6.04px;
     height: 6.04px;
   }
+
+  .test-vison-section {
+    padding-left: 16.72px;
+    padding-right: 16.72px;
+  }
 }
