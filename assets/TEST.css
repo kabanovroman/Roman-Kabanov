@@ -875,4 +875,8 @@ body.test-popup-open {
   .test-header__bar {
     background-color: var(--test-gray-1);
   }
+  
+  .test-header__panel {
+    background-color: var(--test-gray-2);
+  }
 }
