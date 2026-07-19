@@ -663,6 +663,10 @@
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.test-popup .test-btn--black{
+
+}
+
 .test-popup__color:last-child {
   border-right: 0;
 }
