@@ -685,6 +685,7 @@
   align-self: stretch;
   flex-shrink: 0;
   background: var(--swatch, #000);
+  border: 1px solid var(--test-black);
 }
 
 .test-popup__color-label {
