@@ -1,0 +1,142 @@
+{% assign product = block.settings.product %}
+
+<article class="test-vison__item" {{ block.shopify_attributes }}>
+  {% if product != blank %}
+    <script type="application/json" data-test-product>
+      {
+        "id": {{ product.id | json }},
+        "handle": {{ product.handle | json }},
+        "title": {{ product.title | json }},
+        "description": {{ product.description | json }},
+        "featured_image": {% if product.featured_image %}{{ product.featured_image | image_url: width: 600 | json }}{% else %}""{% endif %},
+        "images": [
+          {% for image in product.images %}
+            {{ image | image_url: width: 600 | json }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ],
+        "options": {{ product.options | json }},
+        "variants": [
+          {% for variant in product.variants %}
+            {
+              "id": {{ variant.id | json }},
+              "title": {{ variant.title | json }},
+              "available": {{ variant.available | json }},
+              "price": {{ variant.price | json }},
+              "option1": {{ variant.option1 | json }},
+              "option2": {{ variant.option2 | json }},
+              "option3": {{ variant.option3 | json }}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    </script>
+
+    <div class="test-vison__media">
+      {% if product.featured_image != blank %}
+        {{
+          product.featured_image
+          | image_url: width: 1200
+          | image_tag:
+            loading: 'lazy',
+            sizes: '(min-width: 750px) 33vw, 50vw',
+            widths: '340, 433, 690, 866, 1200',
+            alt: product.title
+        }}
+      {% else %}
+        {{ 'product-1' | placeholder_svg_tag: 'test-vison__placeholder' }}
+      {% endif %}
+
+      <button
+        type="button"
+        class="test-vison__hotspot"
+        style="
+          --hotspot-top-desktop: {{ block.settings.hotspot_top_desktop }}%;
+          --hotspot-left-desktop: {{ block.settings.hotspot_left_desktop }}%;
+          --hotspot-top-mobile: {{ block.settings.hotspot_top_mobile }}%;
+          --hotspot-left-mobile: {{ block.settings.hotspot_left_mobile }}%;
+        "
+        data-test-hotspot
+        data-product-handle="{{ product.handle }}"
+        aria-label="Quick view {{ product.title }}"
+      >
+        <span aria-hidden="true" class="test-hotspot-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M4.98047 0.75V9.21154" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M0.75 4.98071H9.21154" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  {% else %}
+    <div class="test-vison__media test-vison__media--empty">
+      {{ 'product-1' | placeholder_svg_tag: 'test-vison__placeholder' }}
+      <p class="test-vison__empty">Select a product</p>
+    </div>
+  {% endif %}
+</article>
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Desktop hotspot"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top position",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "hotspot_left_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left position",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Mobile hotspot"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top position",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "hotspot_left_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left position",
+      "default": 70
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product"
+    }
+  ]
+}
+{% endschema %}
