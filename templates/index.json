@@ -286,6 +286,66 @@
     "test_vison_T64bib": {
       "type": "TEST-VISON",
       "blocks": {
+        "test_product_g99qDe": {
+          "type": "test-product",
+          "name": "Product",
+          "settings": {
+            "product": "",
+            "hotspot_top_desktop": 10,
+            "hotspot_left_desktop": 70,
+            "hotspot_top_mobile": 10,
+            "hotspot_left_mobile": 70
+          },
+          "blocks": {}
+        },
+        "test_product_4LCYgx": {
+          "type": "test-product",
+          "name": "Product",
+          "settings": {
+            "product": "",
+            "hotspot_top_desktop": 10,
+            "hotspot_left_desktop": 70,
+            "hotspot_top_mobile": 10,
+            "hotspot_left_mobile": 70
+          },
+          "blocks": {}
+        },
+        "test_product_CATJ4a": {
+          "type": "test-product",
+          "name": "Product",
+          "settings": {
+            "product": "",
+            "hotspot_top_desktop": 10,
+            "hotspot_left_desktop": 70,
+            "hotspot_top_mobile": 10,
+            "hotspot_left_mobile": 70
+          },
+          "blocks": {}
+        },
+        "test_product_a9bBct": {
+          "type": "test-product",
+          "name": "Product",
+          "settings": {
+            "product": "",
+            "hotspot_top_desktop": 10,
+            "hotspot_left_desktop": 70,
+            "hotspot_top_mobile": 10,
+            "hotspot_left_mobile": 70
+          },
+          "blocks": {}
+        },
+        "test_product_WBf6zK": {
+          "type": "test-product",
+          "name": "Product",
+          "settings": {
+            "product": "",
+            "hotspot_top_desktop": 10,
+            "hotspot_left_desktop": 70,
+            "hotspot_top_mobile": 10,
+            "hotspot_left_mobile": 70
+          },
+          "blocks": {}
+        },
         "test_product_pEg7jH": {
           "type": "test-product",
           "name": "Product",
@@ -300,6 +360,11 @@
         }
       },
       "block_order": [
+        "test_product_g99qDe",
+        "test_product_4LCYgx",
+        "test_product_CATJ4a",
+        "test_product_a9bBct",
+        "test_product_WBf6zK",
         "test_product_pEg7jH"
       ],
       "name": "TEST Vison",
