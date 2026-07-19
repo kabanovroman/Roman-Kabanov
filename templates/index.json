@@ -291,8 +291,8 @@
           "name": "Product",
           "settings": {
             "product": "black-leather-bag",
-            "hotspot_top_desktop": 10,
-            "hotspot_left_desktop": 70,
+            "hotspot_top_desktop": 57,
+            "hotspot_left_desktop": 62,
             "hotspot_top_mobile": 10,
             "hotspot_left_mobile": 70
           },
@@ -303,8 +303,8 @@
           "name": "Product",
           "settings": {
             "product": "blue-silk-tuxedo",
-            "hotspot_top_desktop": 10,
-            "hotspot_left_desktop": 70,
+            "hotspot_top_desktop": 53,
+            "hotspot_left_desktop": 85,
             "hotspot_top_mobile": 10,
             "hotspot_left_mobile": 70
           },
@@ -315,8 +315,8 @@
           "name": "Product",
           "settings": {
             "product": "chequered-red-shirt",
-            "hotspot_top_desktop": 10,
-            "hotspot_left_desktop": 70,
+            "hotspot_top_desktop": 20,
+            "hotspot_left_desktop": 62,
             "hotspot_top_mobile": 10,
             "hotspot_left_mobile": 70
           },
@@ -327,8 +327,8 @@
           "name": "Product",
           "settings": {
             "product": "classic-leather-jacket",
-            "hotspot_top_desktop": 10,
-            "hotspot_left_desktop": 70,
+            "hotspot_top_desktop": 19,
+            "hotspot_left_desktop": 72,
             "hotspot_top_mobile": 10,
             "hotspot_left_mobile": 70
           },
@@ -339,8 +339,8 @@
           "name": "Product",
           "settings": {
             "product": "classic-varsity-top",
-            "hotspot_top_desktop": 10,
-            "hotspot_left_desktop": 70,
+            "hotspot_top_desktop": 26,
+            "hotspot_left_desktop": 51,
             "hotspot_top_mobile": 10,
             "hotspot_left_mobile": 70
           },
@@ -351,8 +351,8 @@
           "name": "Product",
           "settings": {
             "product": "dark-denim-top",
-            "hotspot_top_desktop": 10,
-            "hotspot_left_desktop": 70,
+            "hotspot_top_desktop": 40,
+            "hotspot_left_desktop": 76,
             "hotspot_top_mobile": 10,
             "hotspot_left_mobile": 70
           },
