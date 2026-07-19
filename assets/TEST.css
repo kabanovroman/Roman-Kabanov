@@ -181,3 +181,34 @@
         flex-shrink: 0;
     }
   }
+
+  .test-hero {
+    font-family: var(--test-jost);
+    background-color: var(--test-white);
+    color: var(--test-black);
+  }
+
+  .test-hero__hero {
+    position: relative;
+    min-height: 421px;
+    overflow: hidden;
+    background-color: var(--test-white);
+  }
+
+  .text-hero__media {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .test-hero__media img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .test-hero__media--desktop {
+    display: none;
+  }
