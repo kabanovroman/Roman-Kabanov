@@ -427,7 +427,7 @@
     min-width: 220px;
     min-height: 50px;
     row-gap: 50px;
-
+    padding-left: 55px;
   }
 
   .test-hero__strip--desktop {
