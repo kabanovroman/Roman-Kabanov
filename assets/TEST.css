@@ -751,6 +751,10 @@
   transform: translateY(-50%) rotate(180deg);
 }
 
+.test-hero-section {
+  margin-top: 90px;
+}
+
 .test-popup__dropdown-menu {
   display: none;
   position: absolute;
