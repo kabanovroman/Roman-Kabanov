@@ -894,4 +894,10 @@ body.test-popup-open {
   .test-vison-section {
     margin-top: 40px;
   }
+
+  .test-hotspot-icon {
+    width: 6.04px;
+    height: 6.04px;
+  }
+  
 }
