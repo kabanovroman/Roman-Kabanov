@@ -644,6 +644,10 @@
   background: var(--test-white);
 }
 
+.test-popup__info {
+  margin-top: 13px;
+}
+
 .test-popup__color {
   display: flex;
   align-items: center;
