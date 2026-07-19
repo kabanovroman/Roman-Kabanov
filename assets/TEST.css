@@ -882,6 +882,7 @@ body.test-popup-open {
 
   .test-btn--yellow {
     min-width: 244px;
-    min-height: 44px;
+    min-height: 44px; 
+    padding: 11px 25px 11px 57px;
   }
 }
