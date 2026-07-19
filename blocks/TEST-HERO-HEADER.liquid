@@ -5,7 +5,34 @@
 
             </span> 
         </button>
-    </div>
+
+        <a class="test-header__logo" href="">
+            {% if block.settings.logo !=blank %}
+                {{ 
+                    block.settings.logo | image_url: width: 320
+                }}
+            {% else %}
+                <span class="test-header__logo-text">{{ block.settings.logo_text }}</span>
+            {% endif %}
+        </a>
+
+        <span class="test-headedr__spacer"></span>
+
+        {% if block.settings.announcement != blank %}
+            <p class="test-header__announcement--desktop">
+                {{ block.settings.announcement }}
+            </p>
+        {% endif %}
+
+        {% if block.settings.choose_gift_label != blank %}
+            <a class="test-header__choose-gift">
+                <span>{{ block.settings.choose_gift_label }}</span>
+                <span class="test-btn__arrow">
+                    
+                </span>
+            </a>
+        {% endif %}
+    </div>  
 </div>
 
 {% schema %}
