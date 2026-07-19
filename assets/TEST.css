@@ -686,6 +686,8 @@
   flex-shrink: 0;
   background: var(--swatch, #000);
   border: .5px solid var(--test-black);
+  border-top: none;
+  border-bottom: none;
 }
 
 .test-popup__color-label {
