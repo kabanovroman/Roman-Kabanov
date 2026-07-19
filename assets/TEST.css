@@ -459,7 +459,6 @@
   width: 100%;
   max-width: 1337px;
   margin: 0 auto;
-  padding: 40px 16px 60px;
   font-family: var(--test-jost);
   color: var(--test-black);
   background: var(--test-white);
