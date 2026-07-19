@@ -752,7 +752,7 @@
 }
 
 .test-hero-section {
-  margin-top: 90px;
+  margin-top: 90px; 
 }
 
 .test-popup__dropdown-menu {
@@ -887,5 +887,9 @@ body.test-popup-open {
 
   .test-btn--black {
     margin-top: 190px;
+  }
+
+  .test-vison-section {
+    margin-top: 40px;
   }
 }
