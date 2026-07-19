@@ -753,6 +753,8 @@
 
 .test-vison-section {
   margin-top: 90px; 
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .test-popup__dropdown-menu {
