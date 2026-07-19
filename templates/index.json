@@ -216,9 +216,9 @@
           "type": "TEST-HERO-HEADER",
           "name": "Hero header",
           "settings": {
-            "logo_text": "",
-            "announcement": "",
-            "choose_gift_label": "",
+            "logo_text": "tisso vison",
+            "announcement": "Find the ideal gift for your loved ones.",
+            "choose_gift_label": "choose gift",
             "choose_gift_link": ""
           },
           "blocks": {}
