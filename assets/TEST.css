@@ -31,6 +31,7 @@
   background: var(--test-gray)
 }
 
+
 .test-header__toggle {
   position: relative;
   z-index: 5;
@@ -867,5 +868,11 @@ body.test-popup-open {
   .test-vison__hotspot svg {
     width: 10px;
     height: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .test-header__bar {
+    background-color: var(--test-gray-1);
   }
 }
