@@ -1,36 +1,36 @@
-{% if block.settings.label != blank %}
-    <a 
-        class="test-hero__shop-now test-btn--black"
-        href="{{ block.settings.link }}"
-    >   
-        <span>{{ block.settings.label }}</span>
-        <span class="test-btn__arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="12" viewBox="0 0 26 12" fill="none">
-                <path d="M0.75 4.77298L7.37629e-08 4.77298L-7.37629e-08 6.27298L0.75 6.27298L0.75 4.77298ZM25.2803 6.05331C25.5732 5.76042 25.5732 5.28554 25.2803 4.99265L20.5074 0.21968C20.2145 -0.073213 19.7396 -0.0732131 19.4467 0.21968C19.1538 0.512574 19.1538 0.987447 19.4467 1.28034L23.6893 5.52298L19.4467 9.76562C19.1538 10.0585 19.1538 10.5334 19.4467 10.8263C19.7396 11.1192 20.2145 11.1192 20.5074 10.8263L25.2803 6.05331ZM0.75 6.27298L24.75 6.27298L24.75 4.77298L0.75 4.77298L0.75 6.27298Z" fill="black"/>
-            </svg>
-        </span>
-    </a>
+{% if block.settings.strip_text != blank %}
+  <div class="test-hero__strip test-hero__strip--desktop" {{ block.shopify_attributes }}>
+    <p>{{ block.settings.strip_text }}</p>
+  </div>
+{% endif %}
+
+{% assign strip_mobile = block.settings.strip_text_mobile | default: block.settings.strip_text %}
+
+{% if strip_mobile != blank %}
+  <div class="test-hero__strip test-hero__strip--mobile" {{ block.shopify_attributes }}>
+    <p>{{ strip_mobile }}</p>
+  </div>
 {% endif %}
 
 {% schema %}
 {
-    "name": "Button",
-    "settings": [
-        {
-            "type": "text",
-            "id": "label",
-            "label": "Button label"
-        },
-        {
-            "type": "url",
-            "id": "link",
-            "label": "Button url"
-        },
-    ],
-    "presets": [
-        {
-            "name": "Button"
-        }
-    ]
+  "name": "Hero bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "strip_text",
+      "label": "Strip text (desktop)",
+    },
+    {
+      "type": "text",
+      "id": "strip_text_mobile",
+      "label": "Strip text (mobile)",
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero bottom"
+    }
+  ]
 }
 {% endschema %}
