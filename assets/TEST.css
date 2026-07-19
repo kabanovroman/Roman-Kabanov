@@ -9,6 +9,8 @@
   --test-jost: 'Jost', sans-serif;
   --test-yellow: #fff544;
   --test-gray: #f5f5f5;
+  --test-gray-1: #F7F7F7;
+  --test-gray-2: #F2F2F2;
   --test-black: #000;
   --test-white: #fff;
   position: relative;
