@@ -60,3 +60,10 @@
     height: 100%;
   }
 
+  .test-header__close {
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
