@@ -1,1 +1,13 @@
- 
+ .test-header-setion, .test-hero-section {
+    position: relative;
+    z-index: 20;
+ }
+
+ .test-header {
+    --test-jost: "jost", sans-serif;
+    --test-yellow:  #FFF544;
+    --test-gray: #F5F5F5;
+    --test-black: #000;
+    --test-white: #fff;
+
+ }
