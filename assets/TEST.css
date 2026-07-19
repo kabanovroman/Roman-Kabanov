@@ -740,7 +740,7 @@
 .test-popup__dropdown-chevron {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 21px;
   display: flex;
   align-items: center;
   justify-content: center;
