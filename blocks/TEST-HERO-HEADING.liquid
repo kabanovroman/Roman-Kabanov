@@ -1,0 +1,23 @@
+{% if block.settings.text != blank %}
+    <h1 class="test-hero__heading" {{ block.shopify_attributes }}>
+        {{ block.settings.text }}
+    </h1>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Heading",
+    "settings": [
+        {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+        }
+    ],
+    "presets": [
+        {
+            "name": "Heading"
+        }
+    ]
+}
+{% endschema %}
