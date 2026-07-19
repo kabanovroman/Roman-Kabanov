@@ -216,7 +216,8 @@
           "type": "test-hero-header",
           "name": "Hero header",
           "settings": {
-            "logo_text": "tisso vison",
+            "logo": "shopify://shop_images/Group_1000007777.svg",
+            "logo_text": "",
             "announcement": "Find the ideal gift for your loved ones.",
             "choose_gift_label": "choose gift",
             "choose_gift_link": ""
