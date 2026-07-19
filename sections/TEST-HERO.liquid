@@ -5,6 +5,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+<section class="test-hero" id="test-hero-{{ section.id }}">
+    {% content_for 'blocks' %}
+</section>
+
 {% schema %}
 {
     "name": "TEST HERO",
