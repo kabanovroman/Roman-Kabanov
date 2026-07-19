@@ -12,7 +12,12 @@
       <button
         type="button"
         class="test-vison__hotspot"
-        style=""
+        style="
+          --hotspot-top-desktop: {{ block.settings.hotspot_top_desktop }}%;
+          --hotspot-left-desktop: {{ block.settings.hotspot_left_desktop }}%;
+          --hotspot-top-mobile: {{ block.settings.hotspot_top_mobile }}%;
+          --hotspot-left-mobile: {{ block.settings.hotspot_left_mobile }}%;
+        "
         data-test-hotspot
         data-product-handle="{{ product.handle }}"
         aria-label="Quick view {{ product.title }}"
