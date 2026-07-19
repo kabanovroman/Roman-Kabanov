@@ -212,20 +212,71 @@
     "test_hero_UVj3ay": {
       "type": "TEST-HERO",
       "blocks": {
-        "test_hero_header_ipDFrc": {
+        "test_hero_header_7QkNg4": {
           "type": "TEST-HERO-HEADER",
           "name": "Hero header",
           "settings": {
-            "logo_text": "tisso vison",
-            "announcement": "Find the ideal gift for your loved ones.",
-            "choose_gift_label": "choose gift",
+            "logo_text": "",
+            "announcement": "",
+            "choose_gift_label": "",
             "choose_gift_link": ""
+          },
+          "blocks": {}
+        },
+        "test_hero_test_dBKPYc": {
+          "type": "TEST-HERO-TEST",
+          "name": "Hero content",
+          "settings": {
+            "image_alt": ""
+          },
+          "blocks": {
+            "test_hero_heading_GKkVLr": {
+              "type": "TEST-HERO-HEADING",
+              "name": "Heading",
+              "settings": {
+                "text": ""
+              },
+              "blocks": {}
+            },
+            "test_hero_description_q6xDmt": {
+              "type": "TEST-HERO-DESCRIPTION",
+              "name": "Description",
+              "settings": {
+                "text_desktop": "",
+                "text_mobile": ""
+              },
+              "blocks": {}
+            },
+            "test_hero_button_VwmpUL": {
+              "type": "TEST-HERO-BUTTON",
+              "name": "Button",
+              "settings": {
+                "label": "",
+                "link": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "test_hero_heading_GKkVLr",
+            "test_hero_description_q6xDmt",
+            "test_hero_button_VwmpUL"
+          ]
+        },
+        "test_hero_bottom_hwrNwj": {
+          "type": "TEST-HERO-BOTTOM",
+          "name": "Hero bottom",
+          "settings": {
+            "strip_text": "",
+            "strip_text_mobile": ""
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "test_hero_header_ipDFrc"
+        "test_hero_header_7QkNg4",
+        "test_hero_test_dBKPYc",
+        "test_hero_bottom_hwrNwj"
       ],
       "name": "TEST HERO",
       "settings": {}
