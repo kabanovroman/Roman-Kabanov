@@ -879,4 +879,9 @@ body.test-popup-open {
   .test-header__panel {
     background-color: var(--test-gray-2);
   }
+
+  .test-btn--yellow {
+    min-width: 244px;
+    min-height: 44px;
+  }
 }
