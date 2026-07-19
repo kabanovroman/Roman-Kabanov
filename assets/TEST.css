@@ -9,5 +9,28 @@
     --test-gray: #F5F5F5;
     --test-black: #000;
     --test-white: #fff;
+    position: relative;
+    font-family: var(--test-jost);
+    color: var(--test-black);
+    background-color: var(--test-white);
+ }
 
+ .test-header__bar {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 170px 1fr 170px;
+    align-items: center;
+    min-height: 65px;
+    padding: 12px 8px;
+    background-color: var(--test-gray);
+ }
+
+ .test-header__toggle { 
+    position: relative;
+    justify-self: start;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
  }
