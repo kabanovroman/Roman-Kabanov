@@ -1,65 +1,103 @@
+{% assign product = block.settings.product %}
+
+<div class="test-vison__item" {{ block.shopify_attributes }}>
+    {% if product != blank %}
+        <div class="test-vison__media">
+            {% if product.featured_image != blank %}
+                {{ 
+                    product.featured_image
+                    | image_url: width: 1200 
+                    | image_tag:
+                      loading: 'lazy',
+                      alt: product.title
+                }}
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'test-vison__placeholder' }}
+            {% endif %}
+
+            <button
+                type="button"
+                class="test-vison__hotspot"
+                style=""
+                data-test-hotspot
+                data-product-handle="{{ product.handle }}"
+                aria-label="Quick view {{ product.title }}"
+            >
+                <span aria-hidden="true">
+
+                </span>
+            </button>
+        </div>
+        {% else %}
+            <div class="test-vison__media test-vison__media--empty">
+                {{ 'product-1' | placeholder_svg_tag: 'test-vison__placeholder' }}
+                <p class="test-vison__empty">Select a product</p>
+            </div>
+    {% endif %}
+</div>
+
 {% schema %}
 {
     "name": "Product",
-   "settings": [
-    {
-      "type": "product",
-      "id": "product",
-      "label": "Product"
-    },
-    {
-      "type": "header",
-      "content": "Desktop hotspot"
-    },
-    {
-      "type": "range",
-      "id": "hotspot_top_desktop",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Top position",
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "hotspot_left_desktop",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Left position",
-      "default": 70
-    },
-    {
-      "type": "header",
-      "content": "Mobile hotspot"
-    },
-    {
-      "type": "range",
-      "id": "hotspot_top_mobile",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Top position",
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "hotspot_left_mobile",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Left position",
-      "default": 70
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product"
-    }
-  ]
+    "settings": [
+        {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+        },
+        {
+            "type": "header",
+            "content": "Desktop Hotspot"
+        },
+        {
+            "type": "range",
+            "id": "hotspot_top_desktop",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Top Position",
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "hotspot_left_desktop",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Left Position",
+            "default": 10
+        },
+        {
+            "type": "header",
+            "content": "Mobile Hotspot"
+        },
+        {
+            "type": "range",
+            "id": "hotspot_top_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Top Position",
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "hotspot_left_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Left Position",
+            "default": 10
+        }
+    ],
+    "presets": [
+        {
+            "name": "Product"
+        }   
+    ]
 }
 {% endschema %}
