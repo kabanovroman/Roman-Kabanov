@@ -1,22 +1,65 @@
 {% schema %}
 {
     "name": "Product",
-    "settings": [
-        {
-            "type": "product",
-            "id": "product",
-            "label": "Product"
-        },
-        {
-            "type": "header",
-            "content": "Desktop Hotspot"
-        },
-       
-    ],
-    "presets": [
-        {
-            "name": "Product"
-        }   
-    ]
+   "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Desktop hotspot"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top position",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "hotspot_left_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left position",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Mobile hotspot"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top position",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "hotspot_left_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left position",
+      "default": 70
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product"
+    }
+  ]
 }
 {% endschema %}
