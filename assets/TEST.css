@@ -838,10 +838,6 @@ body.test-popup-open {
 }
 
 @media screen and (min-width: 750px) {
-  .test-vison {
-    padding: 90px 51px 80px;
-  }
-
   .test-vison__heading {
     margin-bottom: 30px;
     font-size: 36px;
