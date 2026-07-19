@@ -209,83 +209,9 @@
         "padding-block-end": 48
       }
     },
-    "test_hero_UVj3ay": {
-      "type": "TEST-HERO",
-      "blocks": {
-        "test_hero_header_7QkNg4": {
-          "type": "TEST-HERO-HEADER",
-          "name": "Hero header",
-          "settings": {
-            "logo_text": "tisso vison",
-            "announcement": "Find the ideal gift for your loved ones.",
-            "choose_gift_label": "choose gift",
-            "choose_gift_link": ""
-          },
-          "blocks": {}
-        },
-        "test_hero_test_dBKPYc": {
-          "type": "TEST-HERO-TEST",
-          "name": "Hero content",
-          "settings": {
-            "imaeg_desktop": "shopify://shop_images/Group_1000008197.png",
-            "image_mobile": "shopify://shop_images/Frame.png",
-            "image_alt": ""
-          },
-          "blocks": {
-            "test_hero_heading_GKkVLr": {
-              "type": "TEST-HERO-HEADING",
-              "name": "Heading",
-              "settings": {
-                "text": "The Gift Guide"
-              },
-              "blocks": {}
-            },
-            "test_hero_description_q6xDmt": {
-              "type": "TEST-HERO-DESCRIPTION",
-              "name": "Description",
-              "settings": {
-                "text_desktop": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
-                "text_mobile": "Discover Joy: Your Ultimate Holiday Gift Destination."
-              },
-              "blocks": {}
-            },
-            "test_hero_button_VwmpUL": {
-              "type": "TEST-HERO-BUTTON",
-              "name": "Button",
-              "settings": {
-                "label": "shop now",
-                "link": ""
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "test_hero_heading_GKkVLr",
-            "test_hero_description_q6xDmt",
-            "test_hero_button_VwmpUL"
-          ]
-        },
-        "test_hero_bottom_hwrNwj": {
-          "type": "TEST-HERO-BOTTOM",
-          "name": "Hero bottom",
-          "settings": {
-            "strip_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
-            "strip_text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "test_hero_header_7QkNg4",
-        "test_hero_test_dBKPYc",
-        "test_hero_bottom_hwrNwj"
-      ],
-      "name": "TEST HERO",
-      "settings": {}
-    }
+    
   },
   "order": [
     "product_list_fa6P9H",
-    "test_hero_UVj3ay"
   ]
 }
