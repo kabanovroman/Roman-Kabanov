@@ -123,3 +123,15 @@
     background-color: var(--test-gray);
     text-align: center;
   }
+
+  .test-header.is-open .test-header__panel {
+    display: flex;
+  }
+
+  .test-header__panel-text {
+    margin: 0;
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--test-black);
+  }
