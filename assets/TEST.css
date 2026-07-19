@@ -510,8 +510,8 @@
   position: absolute;
   top: var(--hotspot-top-mobile, 10%);
   left: var(--hotspot-left-mobile, 70%);
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   display: grid;
   place-items: center;
   padding: 0;
