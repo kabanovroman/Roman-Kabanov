@@ -1,0 +1,38 @@
+<div class="test-hero__description-wrap" {{ block.shopify_attributes }}>
+    {% if block.settings.text_desktop != blank %}
+        <p class="test-hero__description test-hero__description--desktop">
+            {{ block.settings.text_desktop }}
+        </p>
+    {% endif %}
+
+    {% assign mobile_text = block.settings.text_mobile | default: block.settings.text_desktop %}
+
+    {% if mobile_text !=true %}
+        <p class="test-hero__description test-hero__description--mobile">
+            {{ mobile_text }}
+        </p>
+    {% endif %}
+</div>
+
+{% schema %}
+{
+    "name": "Description",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "text_desktop",
+            "label": "Description (desktop)"
+        },
+        {
+            "type": "textarea",
+            "id": "text_mobile",
+            "label": "Description (mobile)"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Description"
+        }
+    ]
+}
+{% endschema %}
