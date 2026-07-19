@@ -895,9 +895,8 @@ body.test-popup-open {
     margin-top: 40px;
   }
 
-  .test-hotspot-icon {
+  .test-vison__hotspot svg {
     width: 6.04px;
     height: 6.04px;
   }
-  
 }
