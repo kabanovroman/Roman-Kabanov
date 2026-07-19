@@ -1,18 +1,17 @@
 <div class="test-hero__description-wrap" {{ block.shopify_attributes }}>
-    {% if block.settings.text_desktop != blank %}
-        <p class="test-hero__description test-hero__description--desktop">
-            {{ block.settings.text_desktop }}
-        </p>
-    {% endif %}
+  {% if block.settings.text_desktop != blank %}
+    <p class="test-hero__description test-hero__description--desktop">
+      {{ block.settings.text_desktop }}
+    </p>
+  {% endif %}
 
-    {% assign mobile_text = block.settings.text_mobile | default: block.settings.text_desktop %}
+  {% assign mobile_text = block.settings.text_mobile | default: block.settings.text_desktop %}
 
-    {% if mobile_text !=true %}
-        <p class="test-hero__description test-hero__description--mobile">
-            {{ mobile_text }}
-        </p>
-    {% endif %}
-</div>
+  {% if mobile_text != blank %}
+    <p class="test-hero__description test-hero__description--mobile">
+        {{ mobile_text }}
+    </p>
+  {% endif %}
 
 {% schema %}
 {
