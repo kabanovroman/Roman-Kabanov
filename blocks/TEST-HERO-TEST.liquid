@@ -1,0 +1,38 @@
+{% schema %}
+{
+    "name": "Hero content",
+    "blocks": [
+        {
+            "type": "TEST-HERO-HEADING"
+        },
+        {
+            "type": "TEST-HERO-DESCRIPTION"
+        },
+        {
+            "type": "TEST-HERO-BUTTON"
+        }
+    ],
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "imaeg_desktop",
+            "label": "Desktop background image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Mobile background image",
+        },
+        {
+            "type": "text",
+            "id": "image_alt",
+            "label": "image alt text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero content"
+        }
+    ]
+}
+{% endschema %}
