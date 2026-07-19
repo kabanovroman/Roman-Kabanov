@@ -290,7 +290,7 @@
           "type": "test-product",
           "name": "Product",
           "settings": {
-            "product": "",
+            "product": "black-leather-bag",
             "hotspot_top_desktop": 10,
             "hotspot_left_desktop": 70,
             "hotspot_top_mobile": 10,
@@ -302,7 +302,7 @@
           "type": "test-product",
           "name": "Product",
           "settings": {
-            "product": "",
+            "product": "blue-silk-tuxedo",
             "hotspot_top_desktop": 10,
             "hotspot_left_desktop": 70,
             "hotspot_top_mobile": 10,
@@ -314,7 +314,7 @@
           "type": "test-product",
           "name": "Product",
           "settings": {
-            "product": "",
+            "product": "chequered-red-shirt",
             "hotspot_top_desktop": 10,
             "hotspot_left_desktop": 70,
             "hotspot_top_mobile": 10,
@@ -326,7 +326,7 @@
           "type": "test-product",
           "name": "Product",
           "settings": {
-            "product": "",
+            "product": "classic-leather-jacket",
             "hotspot_top_desktop": 10,
             "hotspot_left_desktop": 70,
             "hotspot_top_mobile": 10,
@@ -338,7 +338,7 @@
           "type": "test-product",
           "name": "Product",
           "settings": {
-            "product": "",
+            "product": "classic-varsity-top",
             "hotspot_top_desktop": 10,
             "hotspot_left_desktop": 70,
             "hotspot_top_mobile": 10,
@@ -350,7 +350,7 @@
           "type": "test-product",
           "name": "Product",
           "settings": {
-            "product": "",
+            "product": "dark-denim-top",
             "hotspot_top_desktop": 10,
             "hotspot_left_desktop": 70,
             "hotspot_top_mobile": 10,
