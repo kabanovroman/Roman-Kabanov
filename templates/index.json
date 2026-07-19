@@ -227,6 +227,8 @@
           "type": "TEST-HERO-TEST",
           "name": "Hero content",
           "settings": {
+            "imaeg_desktop": "shopify://shop_images/Group_1000008197.png",
+            "image_mobile": "shopify://shop_images/Frame.png",
             "image_alt": ""
           },
           "blocks": {
@@ -234,7 +236,7 @@
               "type": "TEST-HERO-HEADING",
               "name": "Heading",
               "settings": {
-                "text": ""
+                "text": "The Gift Guide"
               },
               "blocks": {}
             },
@@ -242,8 +244,8 @@
               "type": "TEST-HERO-DESCRIPTION",
               "name": "Description",
               "settings": {
-                "text_desktop": "",
-                "text_mobile": ""
+                "text_desktop": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+                "text_mobile": "Discover Joy: Your Ultimate Holiday Gift Destination."
               },
               "blocks": {}
             },
@@ -251,7 +253,7 @@
               "type": "TEST-HERO-BUTTON",
               "name": "Button",
               "settings": {
-                "label": "",
+                "label": "shop now",
                 "link": ""
               },
               "blocks": {}
@@ -267,8 +269,8 @@
           "type": "TEST-HERO-BOTTOM",
           "name": "Hero bottom",
           "settings": {
-            "strip_text": "",
-            "strip_text_mobile": ""
+            "strip_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+            "strip_text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
           },
           "blocks": {}
         }
