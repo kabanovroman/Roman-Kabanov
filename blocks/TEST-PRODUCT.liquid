@@ -1,6 +1,6 @@
 {% assign product = block.settings.product %}
 
-<div class="test-vison__item" {{ block.shopify_attributes }}>
+<article class="test-vison__item" {{ block.shopify_attributes }}>
   {% if product != blank %}
     <script type="application/json" data-test-product>
       {
@@ -30,9 +30,18 @@
         ]
       }
     </script>
+
     <div class="test-vison__media">
       {% if product.featured_image != blank %}
-        {{ product.featured_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: product.title }}
+        {{
+          product.featured_image
+          | image_url: width: 1200
+          | image_tag:
+            loading: 'lazy',
+            sizes: '(min-width: 750px) 33vw, 50vw',
+            widths: '340, 433, 690, 866, 1200',
+            alt: product.title
+        }}
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: 'test-vison__placeholder' }}
       {% endif %}
@@ -52,8 +61,8 @@
       >
         <span aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M4.98047 0.75V9.21154" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M0.75 4.98071H9.21154" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M4.98047 0.75V9.21154" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M0.75 4.98071H9.21154" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
           </svg>
         </span>
       </button>
@@ -64,7 +73,7 @@
       <p class="test-vison__empty">Select a product</p>
     </div>
   {% endif %}
-</div>
+</article>
 
 {% schema %}
 {
@@ -77,7 +86,7 @@
     },
     {
       "type": "header",
-      "content": "Desktop Hotspot"
+      "content": "Desktop hotspot"
     },
     {
       "type": "range",
@@ -86,7 +95,7 @@
       "max": 100,
       "step": 1,
       "unit": "%",
-      "label": "Top Position",
+      "label": "Top position",
       "default": 10
     },
     {
@@ -96,12 +105,12 @@
       "max": 100,
       "step": 1,
       "unit": "%",
-      "label": "Left Position",
-      "default": 10
+      "label": "Left position",
+      "default": 70
     },
     {
       "type": "header",
-      "content": "Mobile Hotspot"
+      "content": "Mobile hotspot"
     },
     {
       "type": "range",
@@ -110,7 +119,7 @@
       "max": 100,
       "step": 1,
       "unit": "%",
-      "label": "Top Position",
+      "label": "Top position",
       "default": 10
     },
     {
@@ -120,8 +129,8 @@
       "max": 100,
       "step": 1,
       "unit": "%",
-      "label": "Left Position",
-      "default": 10
+      "label": "Left position",
+      "default": 70
     }
   ],
   "presets": [
