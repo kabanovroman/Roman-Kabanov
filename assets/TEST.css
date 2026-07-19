@@ -681,11 +681,11 @@
 }
 
 .test-popup__color-swatch {
-  width: 4px;
+  width: 5px;
   align-self: stretch;
   flex-shrink: 0;
   background: var(--swatch, #000);
-  border: 1px solid var(--test-black);
+  border: .5px solid var(--test-black);
 }
 
 .test-popup__color-label {
