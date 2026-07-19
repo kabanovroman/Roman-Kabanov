@@ -17,3 +17,28 @@
         {% content_for 'blocks' %}
     </div>
 </test-vison-grid>
+
+
+{% schema %}
+{
+    "name": "TEST Vison",
+    "class": "test-vision-section",
+    "blocks": [
+        {
+            "type": "TEST-PRODUCT"
+        }
+    ],
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        }
+    ],
+    "presets": [
+        {
+            "name": "TEST Vison"
+        }
+    ]
+}
+{% endschema %}
