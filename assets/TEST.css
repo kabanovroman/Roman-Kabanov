@@ -813,7 +813,6 @@
   min-height: 40px;
   padding: 10px 12px;
   border: 0;
-  border-right: 0.5px solid var(--test-black);
   background: var(--test-white);
   color: var(--test-black);
   font-family: var(--test-jost);
