@@ -262,6 +262,7 @@
 
 .test-hero__shop-now {
   /* margin-top: 168px; */
+  padding-left: 55px;
 }
 
 .test-hero__strip {
@@ -426,6 +427,7 @@
     min-width: 220px;
     min-height: 50px;
     row-gap: 50px;
+
   }
 
   .test-hero__strip--desktop {
