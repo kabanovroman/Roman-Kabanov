@@ -687,7 +687,7 @@
   align-self: stretch;
   flex-shrink: 0;
   background: var(--swatch, #000);
-  border: .5px solid var(--test-black);
+  border-right: .5px solid var(--test-black);
   border-top: none;
   border-bottom: none;
 }
